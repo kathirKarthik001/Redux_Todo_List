@@ -10,10 +10,9 @@ function TodoList() {
   return (
     <div className='todolist'>
     <h3>Todos</h3>
-    <div>
+    <div >
         {todos.map( (todo) => 
-        <div  key={todo.id}>
-          
+        <div className='todo' key={todo.id}>
             <div>
             <input type="checkbox"  id='done'  onClick={()=> dispatch(CompTodos(todo.id))} />
             {todo.text}
